@@ -1,0 +1,21 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /.*
+  script: login.php
+
+- url: /.*
+  script: form.php
+
+- url: /.*
+  script: test.php
+
+- url: /.*
+  script: thank.php      
+
+env_variables:
+  
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/test-cat_CONNECTION_NAME;dbname=edushastra
+  MYSQL_USER: root
+  MYSQL_PASSWORD: 'micromaX123'  
