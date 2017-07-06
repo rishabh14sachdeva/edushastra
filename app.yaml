@@ -1,0 +1,15 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /.*
+  script: login.php
+
+- url: /.*
+  script: form.php
+
+- url: /.*
+  script: test.php
+
+- url: /.*
+  script: thank.php      
